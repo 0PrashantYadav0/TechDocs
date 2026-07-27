@@ -36,18 +36,30 @@ flowchart TB
     A["system-design-fundamentals"] --> B["databases (ch 1-3)"]
     B --> C["api-design + testing-and-quality"]
     C --> C2["encryption / quic / smtp<br/>(how the wires work)"]
+    C2 --> NET1["networking (how the internet works)"]
+    NET1 --> AUTH1["auth (authentication fundamentals)"]
     end
     subgraph L2["2. INTERMEDIATE - building real systems"]
     D["messaging-and-streaming"] --> E["distributed-systems"]
     E --> CC["concurrency"]
     CC --> F["infrastructure"]
     F --> G["realtime / mqtt / security"]
+    G --> CON1["containers-and-orchestration<br/>(Docker + K8s core)"]
+    CON1 --> CICD1["cicd-and-devops<br/>(pipelines + deployment strategies)"]
+    CICD1 --> AUTH2["auth (OAuth2, JWT)"]
+    AUTH2 --> NET2["networking (DNS, CDNs)"]
+    NET2 --> CLOUD1["cloud-and-serverless<br/>(cloud-native fundamentals)"]
     end
     subgraph L3["3. ADVANCED - scale & operate"]
     H["databases (ch 4-5)"] --> I["microservices"]
     I --> J["observability-and-reliability"]
     J --> K["architecture-patterns"]
     K --> AI["ai-ml (AI/ML/DL/GenAI)"]
+    AI --> CON2["containers-and-orchestration<br/>(networking, production patterns)"]
+    CON2 --> CICD2["cicd-and-devops (GitOps/IaC)"]
+    CICD2 --> AUTH3["auth (authorization patterns)"]
+    AUTH3 --> CLOUD2["cloud-and-serverless<br/>(serverless + cloud architecture)"]
+    CLOUD2 --> DE["data-engineering<br/>(pipelines, warehouses, streaming)"]
     end
     subgraph L4["4. SENIOR / EM - judgment & people"]
     M["engineering-leadership"]
@@ -74,6 +86,10 @@ Start here regardless of experience — these are the mental models everything e
 5. The networking basics — **[quic/](./quic/README.md)** (TCP/UDP, TLS, HTTP),
    **[encryption/](./encryption/README.md)**, **[smtp/](./smtp/README.md)** — how the wires
    actually work.
+6. **[networking/](./networking/README.md)** ch 1 — how the internet actually works: IP, routing,
+   NAT, the life of an HTTP request.
+7. **[auth/](./auth/README.md)** ch 1 — authentication fundamentals: passwords, hashing,
+   sessions vs tokens.
 
 ### Stage 2 — Intermediate (you build features; now build systems)
 1. **[messaging-and-streaming/](./messaging-and-streaming/README.md)** — sync vs async, queues
@@ -86,6 +102,14 @@ Start here regardless of experience — these are the mental models everything e
    caching & Redis.
 5. Protocol deep-dives as needed — **[realtime/](./realtime/README.md)** (WebSocket/WebRTC),
    **[mqtt/](./mqtt/README.md)**, **[security/](./security/README.md)**.
+6. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 1-2 — Docker
+   fundamentals and Kubernetes core objects.
+7. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 1-2 — CI/CD pipelines and deployment
+   strategies (blue/green, canary, rolling).
+8. **[auth/](./auth/README.md)** ch 2-3 — OAuth 2.0, OIDC, JWT deep-dive.
+9. **[networking/](./networking/README.md)** ch 2-3 — DNS deep-dive, CDNs & edge computing.
+10. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 1 — cloud-native
+    fundamentals, 12-factor app.
 
 ### Stage 3 — Advanced (you scale and operate systems)
 1. **[databases/](./databases/README.md)** chapters 4-5 — replication, sharding, data modeling.
@@ -97,6 +121,15 @@ Start here regardless of experience — these are the mental models everything e
    security by design, deployment & cost.
 5. **[ai-ml/](./ai-ml/README.md)** — AI vs ML vs DL vs GenAI, machine learning, deep learning,
    transformers & LLMs, RAG/agents, and MLOps. The fast-moving field every engineer now needs.
+6. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
+   networking, storage, and production patterns (probes, HPA, Helm, service mesh).
+7. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 — GitOps, Infrastructure as Code,
+   immutable infrastructure.
+8. **[auth/](./auth/README.md)** ch 4 — authorization patterns (RBAC, ABAC, ReBAC, zero trust).
+9. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 2-3 — serverless patterns,
+   multi-region, disaster recovery, cloud cost optimization.
+10. **[data-engineering/](./data-engineering/README.md)** — data pipelines, warehouses &
+    lakehouses, streaming at scale. The data platform every system eventually needs.
 
 ### Stage 4 — Senior / Staff / Engineering Manager (judgment & people)
 1. **[engineering-leadership/](./engineering-leadership/README.md)** — the career ladder,
@@ -122,12 +155,18 @@ Start here regardless of experience — these are the mental models everything e
 | [observability-and-reliability/](./observability-and-reliability/README.md) | Intermediate → Advanced | Metrics/logs/traces, SLIs/SLOs/error budgets, incidents & postmortems |
 | [architecture-patterns/](./architecture-patterns/README.md) | Intermediate → Advanced | Clean/hexagonal architecture, ADRs, security by design, deployment & cost |
 | [ai-ml/](./ai-ml/README.md) | Basic → Advanced | AI vs ML vs DL vs GenAI, machine learning, deep learning, transformers & LLMs, RAG/agents, MLOps |
+| [containers-and-orchestration/](./containers-and-orchestration/README.md) | Basic → Advanced | Docker, Kubernetes core, K8s networking & storage, production patterns, service mesh |
+| [cicd-and-devops/](./cicd-and-devops/README.md) | Basic → Advanced | CI/CD pipelines, deployment strategies (blue/green, canary), GitOps & Infrastructure as Code |
+| [auth/](./auth/README.md) | Basic → Advanced | Authentication, OAuth 2.0/OIDC, JWT, authorization patterns (RBAC/ABAC/ReBAC), zero trust |
+| [cloud-and-serverless/](./cloud-and-serverless/README.md) | Basic → Advanced | Cloud-native, 12-factor app, serverless patterns, multi-region, DR, cost optimization |
+| [data-engineering/](./data-engineering/README.md) | Basic → Advanced | Data pipelines (ETL/ELT), warehouses & lakehouses, streaming at scale, CDC |
 | [engineering-leadership/](./engineering-leadership/README.md) | Senior → EM | Career ladder, technical leadership, the EM transition, career-long wisdom |
 
 ### Deep-dive references (networking, protocols, crypto)
 
 | Module | What it covers |
 |--------|----------------|
+| [networking/](./networking/README.md) | How the internet works (IP, routing, NAT), DNS deep-dive, CDNs & edge computing, BGP |
 | [encryption/](./encryption/README.md) | Symmetric/asymmetric encryption, keys, hybrid, digital signatures, real algorithms (AES, RSA, ECC, DH) |
 | [quic/](./quic/README.md) | The networking stack: TCP vs UDP, TLS 1.2/1.3, HTTP/1-2-3, and QUIC |
 | [mqtt/](./mqtt/README.md) | MQTT pub/sub protocol (topics, QoS, sessions, LWT) and how to use it effectively |
@@ -156,9 +195,15 @@ TechDocs/
 ├── observability-and-reliability/   <- metrics/logs/traces, SLOs, incidents
 ├── architecture-patterns/           <- clean architecture, ADRs, security, deployment, cost
 ├── ai-ml/                           <- AI/ML/DL/GenAI, transformers, RAG, MLOps
+├── containers-and-orchestration/    <- Docker, Kubernetes, service mesh, production patterns
+├── cicd-and-devops/                 <- CI/CD pipelines, deployment strategies, GitOps, IaC
+├── auth/                            <- authentication, OAuth2/OIDC, JWT, authorization patterns
+├── cloud-and-serverless/            <- cloud-native, serverless, multi-region, cost optimization
+├── data-engineering/                <- data pipelines, warehouses, lakehouses, streaming at scale
 ├── engineering-leadership/          <- career ladder, tech leadership, EM, wisdom
 │
 │   # Deep-dive references
+├── networking/                      <- how the internet works, DNS, CDNs, edge computing
 ├── encryption/                      <- how encryption works
 ├── quic/                            <- transport & HTTP evolution
 ├── mqtt/                            <- IoT pub/sub messaging

@@ -60,6 +60,8 @@ flowchart TB
     CICD2 --> AUTH3["auth (authorization patterns)"]
     AUTH3 --> CLOUD2["cloud-and-serverless<br/>(serverless + cloud architecture)"]
     CLOUD2 --> DE["data-engineering<br/>(pipelines, warehouses, streaming)"]
+    DE --> SE["search-systems<br/>(indexes, ranking, autocomplete)"]
+    SE --> PE["performance-engineering<br/>(latency, profiling, load tests)"]
     end
     subgraph L4["4. SENIOR / EM - judgment & people"]
     M["engineering-leadership"]
@@ -130,6 +132,10 @@ Start here regardless of experience — these are the mental models everything e
    multi-region, disaster recovery, cloud cost optimization.
 10. **[data-engineering/](./data-engineering/README.md)** — data pipelines, warehouses &
     lakehouses, streaming at scale. The data platform every system eventually needs.
+11. **[search-systems/](./search-systems/README.md)** — inverted indexes, Elasticsearch/
+    OpenSearch, ranking, and autocomplete. Product search beyond `LIKE '%query%'`.
+12. **[performance-engineering/](./performance-engineering/README.md)** — latency budgets,
+    profiling & flame graphs, load testing and capacity planning.
 
 ### Stage 4 — Senior / Staff / Engineering Manager (judgment & people)
 1. **[engineering-leadership/](./engineering-leadership/README.md)** — the career ladder,
@@ -160,6 +166,8 @@ Start here regardless of experience — these are the mental models everything e
 | [auth/](./auth/README.md) | Basic → Advanced | Authentication, OAuth 2.0/OIDC, JWT, authorization patterns (RBAC/ABAC/ReBAC), zero trust |
 | [cloud-and-serverless/](./cloud-and-serverless/README.md) | Basic → Advanced | Cloud-native, 12-factor app, serverless patterns, multi-region, DR, cost optimization |
 | [data-engineering/](./data-engineering/README.md) | Basic → Advanced | Data pipelines (ETL/ELT), warehouses & lakehouses, streaming at scale, CDC |
+| [search-systems/](./search-systems/README.md) | Basic → Advanced | Inverted indexes, Elasticsearch/OpenSearch, BM25 ranking, autocomplete & facets |
+| [performance-engineering/](./performance-engineering/README.md) | Basic → Advanced | Latency budgets & percentiles, profiling/flame graphs, load testing & capacity |
 | [engineering-leadership/](./engineering-leadership/README.md) | Senior → EM | Career ladder, technical leadership, the EM transition, career-long wisdom |
 
 ### Deep-dive references (networking, protocols, crypto)
@@ -200,6 +208,8 @@ TechDocs/
 ├── auth/                            <- authentication, OAuth2/OIDC, JWT, authorization patterns
 ├── cloud-and-serverless/            <- cloud-native, serverless, multi-region, cost optimization
 ├── data-engineering/                <- data pipelines, warehouses, lakehouses, streaming at scale
+├── search-systems/                  <- inverted indexes, Elasticsearch, ranking, autocomplete
+├── performance-engineering/         <- latency budgets, profiling, load testing, capacity
 ├── engineering-leadership/          <- career ladder, tech leadership, EM, wisdom
 │
 │   # Deep-dive references

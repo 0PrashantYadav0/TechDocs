@@ -247,6 +247,9 @@ safety net (for delayed jobs and missed notifications) and use `NOTIFY` for imme
 -- Producer, after inserting a ready job:
 NOTIFY jobs_ready;
 ```
+
+And the worker waits to be woken instead of polling tightly:
+
 ```python
 # Worker: block until notified OR a short timeout, then try to claim. Latency ~ms, not ~1s.
 conn.execute("LISTEN jobs_ready")
@@ -272,10 +275,10 @@ flowchart TB
     style Reaper fill:#fff3e0,stroke:#e65100
 ```
 
-Every failure mode from Chapter 1 has a defense here: **dead scheduler** → advisory-lock leader +
-many stateless workers; **overlapping runs** → single claim + lease; **lost jobs** → durable table
-+ transactional enqueue + reaper; **duplicates** → `dedup_key` + fencing on `complete()`;
-**ordering** → `ORDER BY priority, run_at`.
+Every failure mode from Chapter 1 has a defense here: **dead scheduler** → advisory-lock leader
+plus many stateless workers; **overlapping runs** → single claim and lease; **lost jobs** → durable
+table with transactional enqueue and a reaper; **duplicates** → `dedup_key` with fencing on
+`complete()`; **ordering** → `ORDER BY priority, run_at`.
 
 ## Operational checklist
 

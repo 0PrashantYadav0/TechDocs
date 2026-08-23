@@ -49,6 +49,7 @@ flowchart TB
     CICD1 --> AUTH2["auth (OAuth2, JWT)"]
     AUTH2 --> NET2["networking (DNS, CDNs)"]
     NET2 --> CLOUD1["cloud-and-serverless<br/>(cloud-native fundamentals)"]
+    CLOUD1 --> DJS["distributed-job-schedular"]
     end
     subgraph L3["3. ADVANCED - scale & operate"]
     H["databases (ch 4-5)"] --> I["microservices"]
@@ -112,6 +113,8 @@ Start here regardless of experience — these are the mental models everything e
 9. **[networking/](./networking/README.md)** ch 2-3 — DNS deep-dive, CDNs & edge computing.
 10. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 1 — cloud-native
     fundamentals, 12-factor app.
+11. **[distributed-job-schedular/](./distributed-job-schedular/README.md)** — leader election,
+    heartbeats, job deduplication, priority queues, and Postgres-backed scheduler.
 
 ### Stage 3 — Advanced (you scale and operate systems)
 1. **[databases/](./databases/README.md)** chapters 4-5 — replication, sharding, data modeling.
@@ -156,6 +159,7 @@ Start here regardless of experience — these are the mental models everything e
 | [testing-and-quality/](./testing-and-quality/README.md) | Basic → Advanced | The testing pyramid, kinds of tests, TDD, coverage, quality gates & reviews |
 | [concurrency/](./concurrency/README.md) | Intermediate → Advanced | Concurrency vs parallelism, threads/async/processes, race conditions, locks, safe patterns |
 | [distributed-systems/](./distributed-systems/README.md) | Intermediate → Advanced | The fallacies, consensus (Raft/quorums), time & idempotency, failure handling |
+| [distributed-job-schedular/](./distributed-job-schedular/README.md) | Intermediate → Advanced | Leader election, heartbeats, job deduplication, priority queues, Postgres scheduler |
 | [messaging-and-streaming/](./messaging-and-streaming/README.md) | Basic → Advanced | Sync vs async, queues vs streams (Kafka/RabbitMQ), delivery guarantees, DLQs |
 | [microservices/](./microservices/README.md) | Intermediate → Advanced | Monolith vs microservices, boundaries & communication, sagas & outbox |
 | [observability-and-reliability/](./observability-and-reliability/README.md) | Intermediate → Advanced | Metrics/logs/traces, SLIs/SLOs/error budgets, incidents & postmortems |
@@ -198,6 +202,7 @@ TechDocs/
 ├── testing-and-quality/             <- testing pyramid, TDD, coverage, quality gates
 ├── concurrency/                     <- threads/async/processes, races, locks, safe patterns
 ├── distributed-systems/             <- fallacies, consensus, idempotency, failure handling
+├── distributed-job-schedular/       <- leader election, heartbeats, deduplication, priority queues
 ├── messaging-and-streaming/         <- async, queues vs streams, delivery guarantees
 ├── microservices/                   <- monolith vs micro, boundaries, sagas
 ├── observability-and-reliability/   <- metrics/logs/traces, SLOs, incidents

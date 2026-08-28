@@ -9,10 +9,10 @@ This module covers how to test well, not just a lot.
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Basic |
-| 1 | The testing pyramid & kinds of tests | [testing-pyramid.md](./testing-pyramid.md) | Basic |
-| 2 | Writing good tests & TDD | [good-tests-and-tdd.md](./good-tests-and-tdd.md) | Intermediate |
-| 3 | Coverage, quality gates & the whole quality picture | [coverage-and-quality.md](./coverage-and-quality.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L1 · Beginner |
+| 1 | The testing pyramid & kinds of tests | [testing-pyramid.md](./testing-pyramid.md) | L1 · Beginner |
+| 2 | Writing good tests & TDD | [good-tests-and-tdd.md](./good-tests-and-tdd.md) | L3 · Intermediate |
+| 3 | Coverage, quality gates & the whole quality picture | [coverage-and-quality.md](./coverage-and-quality.md) | L4 · Advanced |
 
 ---
 

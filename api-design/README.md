@@ -9,10 +9,10 @@ misuse — a skill that quietly separates senior engineers from the rest.
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Basic |
-| 1 | REST, gRPC & GraphQL (choosing a style) | [api-styles.md](./api-styles.md) | Basic → Intermediate |
-| 2 | Designing good REST APIs (resources, status codes, errors) | [rest-design.md](./rest-design.md) | Intermediate |
-| 3 | Versioning, pagination & evolution | [versioning-and-evolution.md](./versioning-and-evolution.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L1 · Beginner |
+| 1 | REST, gRPC & GraphQL (choosing a style) | [api-styles.md](./api-styles.md) | L2 · Novice |
+| 2 | Designing good REST APIs (resources, status codes, errors) | [rest-design.md](./rest-design.md) | L3 · Intermediate |
+| 3 | Versioning, pagination & evolution | [versioning-and-evolution.md](./versioning-and-evolution.md) | L4 · Advanced |
 
 ---
 

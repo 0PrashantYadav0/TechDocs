@@ -6,6 +6,6 @@ If you think networking is just for IT ops and you can just build your APIs and 
 
 | # | Chapter | Level | What you'll learn |
 |---|---------|-------|-------------------|
-| 1 | [How the Internet Works](./how-the-internet-works.md) | Basic | The practical 4-layer model, IP addressing, subnets, NAT, HTTP lifecycle, traceroute |
-| 2 | [DNS Deep Dive](./dns-deep-dive.md) | Intermediate | Resolution flow, record types, TTL, authoritative vs recursive, load balancing, DNSSEC |
-| 3 | [CDNs and the Edge](./cdns-and-edge.md) | Intermediate → Advanced | Caching, anycast routing, edge compute, DDoS protection, BGP basics |
+| 1 | [How the Internet Works](./how-the-internet-works.md) | L1 · Beginner | The practical 4-layer model, IP addressing, subnets, NAT, HTTP lifecycle, traceroute |
+| 2 | [DNS Deep Dive](./dns-deep-dive.md) | L3 · Intermediate | Resolution flow, record types, TTL, authoritative vs recursive, load balancing, DNSSEC |
+| 3 | [CDNs and the Edge](./cdns-and-edge.md) | L4 · Advanced | Caching, anycast routing, edge compute, DDoS protection, BGP basics |

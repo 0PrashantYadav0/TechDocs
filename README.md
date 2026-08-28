@@ -22,9 +22,13 @@ Every module follows the same shape, so once you learn one, you know them all:
 - Diagrams use [Mermaid](https://mermaid.js.org/) (renders on GitHub / most Markdown viewers).
   If yours doesn't, paste the ```mermaid block into the [Mermaid Live Editor](https://mermaid.live).
 
-Every chapter is tagged **Basic**, **Intermediate**, **Advanced**, or **Senior+** in its
-module's contents table. Use the tags to calibrate — it's fine to read a Basic chapter in an
-Advanced module and skip the rest until you're ready.
+Every chapter is tagged with one of five levels in its module's contents table —
+**L1 Beginner**, **L2 Novice**, **L3 Intermediate**, **L4 Advanced**, or **L5 Expert**. Use
+the tags to calibrate — it's fine to read an L1 chapter in an otherwise-L4 module and skip
+the rest until you're ready.
+
+Missing a topic you'd expect to see? Check [TODO.md](./TODO.md) before assuming it's an
+oversight — it's the running list of gaps we already know about.
 
 ---
 

@@ -4,16 +4,16 @@ A deep-dive into how encryption works, split into focused topics with code examp
 
 ## Contents
 
-| # | Topic | File |
-|---|-------|------|
-| 0 | Intro, vocabulary & the big picture | *(this file)* |
-| 1 | Symmetric Encryption | [symmetric-encryption.md](./symmetric-encryption.md) |
-| 2 | Asymmetric Encryption | [asymmetric-encryption.md](./asymmetric-encryption.md) |
-| 3 | Public & Private Keys | [public-private-keys.md](./public-private-keys.md) |
-| 4 | Symmetric vs Asymmetric | [symmetric-vs-asymmetric.md](./symmetric-vs-asymmetric.md) |
-| 5 | Hybrid Encryption | [hybrid-encryption.md](./hybrid-encryption.md) |
-| 6 | Real Algorithms (AES, RSA, ECC, DH) | [algorithms.md](./algorithms.md) |
-| 7 | Digital Signatures | [digital-signatures.md](./digital-signatures.md) |
+| # | Topic | File | Level |
+|---|-------|------|-------|
+| 0 | Intro, vocabulary & the big picture | *(this file)* | L1 · Beginner |
+| 1 | Symmetric Encryption | [symmetric-encryption.md](./symmetric-encryption.md) | L1 · Beginner |
+| 2 | Asymmetric Encryption | [asymmetric-encryption.md](./asymmetric-encryption.md) | L2 · Novice |
+| 3 | Public & Private Keys | [public-private-keys.md](./public-private-keys.md) | L1 · Beginner |
+| 4 | Symmetric vs Asymmetric | [symmetric-vs-asymmetric.md](./symmetric-vs-asymmetric.md) | L2 · Novice |
+| 5 | Hybrid Encryption | [hybrid-encryption.md](./hybrid-encryption.md) | L3 · Intermediate |
+| 6 | Real Algorithms (AES, RSA, ECC, DH) | [algorithms.md](./algorithms.md) | L4 · Advanced |
+| 7 | Digital Signatures | [digital-signatures.md](./digital-signatures.md) | L3 · Intermediate |
 
 > Code examples use Python with the [`cryptography`](https://cryptography.io) library.
 > Install it with:

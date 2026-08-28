@@ -9,12 +9,12 @@ continents."
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Basic |
-| 1 | SQL vs NoSQL (and when to use which) | [sql-vs-nosql.md](./sql-vs-nosql.md) | Basic |
-| 2 | Indexing & query performance | [indexing.md](./indexing.md) | Intermediate |
-| 3 | Transactions, ACID & isolation levels | [transactions-acid.md](./transactions-acid.md) | Intermediate |
-| 4 | Replication & partitioning (sharding) | [replication-sharding.md](./replication-sharding.md) | Advanced |
-| 5 | Data modeling wisdom (normalization, access patterns) | [data-modeling.md](./data-modeling.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L1 · Beginner |
+| 1 | SQL vs NoSQL (and when to use which) | [sql-vs-nosql.md](./sql-vs-nosql.md) | L1 · Beginner |
+| 2 | Indexing & query performance | [indexing.md](./indexing.md) | L3 · Intermediate |
+| 3 | Transactions, ACID & isolation levels | [transactions-acid.md](./transactions-acid.md) | L3 · Intermediate |
+| 4 | Replication & partitioning (sharding) | [replication-sharding.md](./replication-sharding.md) | L4 · Advanced |
+| 5 | Data modeling wisdom (normalization, access patterns) | [data-modeling.md](./data-modeling.md) | L4 · Advanced |
 
 ---
 

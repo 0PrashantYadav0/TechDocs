@@ -9,10 +9,10 @@ backbone of resilient, scalable systems.
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Intermediate |
-| 1 | Sync vs async & the messaging patterns | [sync-vs-async.md](./sync-vs-async.md) | Basic |
-| 2 | Message queues vs event streams (Kafka vs RabbitMQ) | [queues-vs-streams.md](./queues-vs-streams.md) | Intermediate |
-| 3 | Delivery guarantees, ordering & the hard parts | [delivery-guarantees.md](./delivery-guarantees.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L3 · Intermediate |
+| 1 | Sync vs async & the messaging patterns | [sync-vs-async.md](./sync-vs-async.md) | L1 · Beginner |
+| 2 | Message queues vs event streams (Kafka vs RabbitMQ) | [queues-vs-streams.md](./queues-vs-streams.md) | L3 · Intermediate |
+| 3 | Delivery guarantees, ordering & the hard parts | [delivery-guarantees.md](./delivery-guarantees.md) | L4 · Advanced |
 
 ---
 

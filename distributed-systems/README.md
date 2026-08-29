@@ -9,11 +9,11 @@ take years of production scars to truly internalize.
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Intermediate |
-| 1 | The fallacies of distributed computing | [fallacies.md](./fallacies.md) | Intermediate |
-| 2 | Consensus: leader election, Raft, quorums | [consensus.md](./consensus.md) | Advanced |
-| 3 | Time, ordering & idempotency | [time-and-idempotency.md](./time-and-idempotency.md) | Advanced |
-| 4 | Failure handling: retries, timeouts, circuit breakers | [failure-handling.md](./failure-handling.md) | Intermediate |
+| 0 | The map (this file) | *(here)* | L3 · Intermediate |
+| 1 | The fallacies of distributed computing | [fallacies.md](./fallacies.md) | L3 · Intermediate |
+| 2 | Consensus: leader election, Raft, quorums | [consensus.md](./consensus.md) | L4 · Advanced |
+| 3 | Time, ordering & idempotency | [time-and-idempotency.md](./time-and-idempotency.md) | L4 · Advanced |
+| 4 | Failure handling: retries, timeouts, circuit breakers | [failure-handling.md](./failure-handling.md) | L3 · Intermediate |
 
 ---
 

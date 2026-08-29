@@ -9,10 +9,10 @@ lesson here is restraint.
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Intermediate |
-| 1 | Monolith vs microservices (and the honest trade-offs) | [monolith-vs-microservices.md](./monolith-vs-microservices.md) | Intermediate |
-| 2 | Service boundaries & communication | [boundaries-and-communication.md](./boundaries-and-communication.md) | Advanced |
-| 3 | Distributed data: sagas, outbox & the patterns | [distributed-data-patterns.md](./distributed-data-patterns.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L3 · Intermediate |
+| 1 | Monolith vs microservices (and the honest trade-offs) | [monolith-vs-microservices.md](./monolith-vs-microservices.md) | L3 · Intermediate |
+| 2 | Service boundaries & communication | [boundaries-and-communication.md](./boundaries-and-communication.md) | L4 · Advanced |
+| 3 | Distributed data: sagas, outbox & the patterns | [distributed-data-patterns.md](./distributed-data-patterns.md) | L4 · Advanced |
 
 ---
 

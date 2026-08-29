@@ -5,11 +5,11 @@ most of the IoT world — split into focused topics with code examples.
 
 ## Contents
 
-| # | Topic | File |
-|---|-------|------|
-| 0 | Intro & the big picture | *(this file)* |
-| 1 | MQTT protocol internals (topics, QoS, sessions, LWT) | [mqtt-protocol.md](./mqtt-protocol.md) |
-| 2 | Using MQTT effectively (patterns, scaling, security) | [effective-mqtt.md](./effective-mqtt.md) |
+| # | Topic | File | Level |
+|---|-------|------|-------|
+| 0 | Intro & the big picture | *(this file)* | L1 · Beginner |
+| 1 | MQTT protocol internals (topics, QoS, sessions, LWT) | [mqtt-protocol.md](./mqtt-protocol.md) | L2 · Novice |
+| 2 | Using MQTT effectively (patterns, scaling, security) | [effective-mqtt.md](./effective-mqtt.md) | L3 · Intermediate |
 
 > Code examples use Python with [`paho-mqtt`](https://pypi.org/project/paho-mqtt/).
 > Install it with:

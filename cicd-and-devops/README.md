@@ -6,6 +6,6 @@ Welcome to the CI/CD and DevOps module. If you're tired of manually pushing code
 
 | # | Chapter | Level | What you'll learn |
 |---|---------|-------|-------------------|
-| 1 | [CI/CD Fundamentals](./cicd-fundamentals.md) | Basic | Pipelines, feedback loops, and trunk-based development |
-| 2 | [Deployment Strategies](./deployment-strategies.md) | Intermediate | Blue/green, canary, feature flags, and zero-downtime |
-| 3 | [GitOps and IaC](./gitops-and-iac.md) | Advanced | Declarative infra, ArgoCD/Flux, and the push vs pull model |
+| 1 | [CI/CD Fundamentals](./cicd-fundamentals.md) | L1 · Beginner | Pipelines, feedback loops, and trunk-based development |
+| 2 | [Deployment Strategies](./deployment-strategies.md) | L3 · Intermediate | Blue/green, canary, feature flags, and zero-downtime |
+| 3 | [GitOps and IaC](./gitops-and-iac.md) | L4 · Advanced | Declarative infra, ArgoCD/Flux, and the push vs pull model |

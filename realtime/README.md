@@ -5,13 +5,13 @@ peer-to-peer video — split into focused topics with code examples.
 
 ## Contents
 
-| # | Topic | File |
-|---|-------|------|
-| 0 | Intro & the big picture | *(this file)* |
-| 1 | WebSocket | [websocket.md](./websocket.md) |
-| 2 | WebRTC | [webrtc.md](./webrtc.md) |
-| 3 | WebSocket vs WebRTC | [websocket-vs-webrtc.md](./websocket-vs-webrtc.md) |
-| 4 | STUN, TURN & ICE (NAT traversal) | [stun-turn-ice.md](./stun-turn-ice.md) |
+| # | Topic | File | Level |
+|---|-------|------|-------|
+| 0 | Intro & the big picture | *(this file)* | L1 · Beginner |
+| 1 | WebSocket | [websocket.md](./websocket.md) | L1 · Beginner |
+| 2 | WebRTC | [webrtc.md](./webrtc.md) | L3 · Intermediate |
+| 3 | WebSocket vs WebRTC | [websocket-vs-webrtc.md](./websocket-vs-webrtc.md) | L2 · Novice |
+| 4 | STUN, TURN & ICE (NAT traversal) | [stun-turn-ice.md](./stun-turn-ice.md) | L4 · Advanced |
 
 ---
 

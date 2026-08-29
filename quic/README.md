@@ -4,13 +4,13 @@ How the internet's transport layer evolved, split into focused topics with code 
 
 ## Contents
 
-| # | Topic | File |
-|---|-------|------|
-| 0 | The networking stack (big picture) | *(this file)* |
-| 1 | TCP vs UDP | [tcp-vs-udp.md](./tcp-vs-udp.md) |
-| 2 | TLS (1.2 vs 1.3) | [tls.md](./tls.md) |
-| 3 | HTTP/1 vs 2 vs 3 | [http-versions.md](./http-versions.md) |
-| 4 | QUIC & how it powers HTTP/3 | [quic.md](./quic.md) |
+| # | Topic | File | Level |
+|---|-------|------|-------|
+| 0 | The networking stack (big picture) | *(this file)* | L1 · Beginner |
+| 1 | TCP vs UDP | [tcp-vs-udp.md](./tcp-vs-udp.md) | L1 · Beginner |
+| 2 | TLS (1.2 vs 1.3) | [tls.md](./tls.md) | L2 · Novice |
+| 3 | HTTP/1 vs 2 vs 3 | [http-versions.md](./http-versions.md) | L2 · Novice |
+| 4 | QUIC & how it powers HTTP/3 | [quic.md](./quic.md) | L3 · Intermediate |
 
 ---
 

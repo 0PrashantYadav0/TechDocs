@@ -9,10 +9,10 @@ how to *see* into your system (observability) and how to *keep it up* (reliabili
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Intermediate |
-| 1 | The three pillars: metrics, logs, traces | [three-pillars.md](./three-pillars.md) | Intermediate |
-| 2 | SLIs, SLOs, SLAs & error budgets | [slos-and-error-budgets.md](./slos-and-error-budgets.md) | Advanced |
-| 3 | Incidents, on-call & postmortems | [incidents-and-postmortems.md](./incidents-and-postmortems.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L3 · Intermediate |
+| 1 | The three pillars: metrics, logs, traces | [three-pillars.md](./three-pillars.md) | L3 · Intermediate |
+| 2 | SLIs, SLOs, SLAs & error budgets | [slos-and-error-budgets.md](./slos-and-error-budgets.md) | L4 · Advanced |
+| 3 | Incidents, on-call & postmortems | [incidents-and-postmortems.md](./incidents-and-postmortems.md) | L4 · Advanced |
 
 ---
 

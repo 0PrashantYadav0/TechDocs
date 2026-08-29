@@ -21,12 +21,12 @@ proof that you rarely need exotic infrastructure to get this right.
 
 | # | Chapter | Level | What you'll learn |
 |---|---------|-------|-------------------|
-| 1 | [Failure Modes: Dead Schedulers, Overlapping Runs & Lost Jobs](./failure-modes.md) | Basic → Intermediate | The three canonical failures, delivery semantics, why "exactly once" is a trap |
-| 2 | [Leader Election](./leader-election.md) | Intermediate → Advanced | Leases & TTLs, fencing tokens, split-brain, advisory locks, etcd/ZooKeeper/k8s |
-| 3 | [Heartbeats & Failure Recovery](./heartbeats-and-recovery.md) | Intermediate → Advanced | Heartbeat tuning, job leases/visibility timeout, reapers, false-positive death |
-| 4 | [Job Deduplication & Idempotency](./job-deduplication.md) | Advanced | Enqueue vs execution dedup, unique keys, idempotency keys, dedup windows |
-| 5 | [Priority Queues & Fairness](./priority-queues.md) | Intermediate → Advanced | Priority buckets vs ordered columns vs sorted sets, starvation, aging, delays |
-| 6 | [A Postgres-Backed Distributed Scheduler](./postgres-backed-scheduler.md) | Advanced | `SKIP LOCKED`, schema, reaper, recurring ticker, transactional enqueue, retries |
+| 1 | [Failure Modes: Dead Schedulers, Overlapping Runs & Lost Jobs](./failure-modes.md) | L2 · Novice | The three canonical failures, delivery semantics, why "exactly once" is a trap |
+| 2 | [Leader Election](./leader-election.md) | L4 · Advanced | Leases & TTLs, fencing tokens, split-brain, advisory locks, etcd/ZooKeeper/k8s |
+| 3 | [Heartbeats & Failure Recovery](./heartbeats-and-recovery.md) | L4 · Advanced | Heartbeat tuning, job leases/visibility timeout, reapers, false-positive death |
+| 4 | [Job Deduplication & Idempotency](./job-deduplication.md) | L4 · Advanced | Enqueue vs execution dedup, unique keys, idempotency keys, dedup windows |
+| 5 | [Priority Queues & Fairness](./priority-queues.md) | L4 · Advanced | Priority buckets vs ordered columns vs sorted sets, starvation, aging, delays |
+| 6 | [A Postgres-Backed Distributed Scheduler](./postgres-backed-scheduler.md) | L4 · Advanced | `SKIP LOCKED`, schema, reaper, recurring ticker, transactional enqueue, retries |
 
 ## How to read this module
 

@@ -10,10 +10,10 @@ models to reason about it correctly.
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Intermediate |
-| 1 | Concurrency vs parallelism, processes, threads & async | [concurrency-vs-parallelism.md](./concurrency-vs-parallelism.md) | Intermediate |
-| 2 | Race conditions, locks & synchronization | [race-conditions-and-locks.md](./race-conditions-and-locks.md) | Advanced |
-| 3 | Patterns for safe concurrency | [safe-concurrency-patterns.md](./safe-concurrency-patterns.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L3 · Intermediate |
+| 1 | Concurrency vs parallelism, processes, threads & async | [concurrency-vs-parallelism.md](./concurrency-vs-parallelism.md) | L3 · Intermediate |
+| 2 | Race conditions, locks & synchronization | [race-conditions-and-locks.md](./race-conditions-and-locks.md) | L4 · Advanced |
+| 3 | Patterns for safe concurrency | [safe-concurrency-patterns.md](./safe-concurrency-patterns.md) | L4 · Advanced |
 
 ---
 

@@ -5,14 +5,14 @@ bastions, rate limiting, and caches — and how to reason about them together.
 
 ## Contents
 
-| # | Topic | File |
-|---|-------|------|
-| 0 | The request path (big picture) | *(this file)* |
-| 1 | L4 Load Balancers (NAT vs Proxy mode, algorithms) | [l4-load-balancer.md](./l4-load-balancer.md) |
-| 2 | Bastion vs Load Balancer vs API Gateway | [bastion-vs-lb-vs-gateway.md](./bastion-vs-lb-vs-gateway.md) |
-| 3 | Rate Limiting & Throttling (hard/soft, jitter) | [rate-limiting.md](./rate-limiting.md) |
-| 4 | API Gateway (deep dive) | [api-gateway.md](./api-gateway.md) |
-| 5 | Caching & Redis Cluster | [caching-redis.md](./caching-redis.md) |
+| # | Topic | File | Level |
+|---|-------|------|-------|
+| 0 | The request path (big picture) | *(this file)* | L1 · Beginner |
+| 1 | L4 Load Balancers (NAT vs Proxy mode, algorithms) | [l4-load-balancer.md](./l4-load-balancer.md) | L2 · Novice |
+| 2 | Bastion vs Load Balancer vs API Gateway | [bastion-vs-lb-vs-gateway.md](./bastion-vs-lb-vs-gateway.md) | L2 · Novice |
+| 3 | Rate Limiting & Throttling (hard/soft, jitter) | [rate-limiting.md](./rate-limiting.md) | L2 · Novice |
+| 4 | API Gateway (deep dive) | [api-gateway.md](./api-gateway.md) | L3 · Intermediate |
+| 5 | Caching & Redis Cluster | [caching-redis.md](./caching-redis.md) | L3 · Intermediate |
 
 ---
 

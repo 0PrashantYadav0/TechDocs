@@ -6,7 +6,7 @@ Welcome to the world of containers and Kubernetes. If you've ever felt the pain 
 
 | # | Chapter | Level | What you'll learn |
 |---|---------|-------|-------------------|
-| 1 | [Containers Fundamentals](./containers-fundamentals.md) | 🟢 Basic | Container vs VM, Namespaces, Cgroups, Dockerfile best practices |
-| 2 | [Kubernetes Core](./kubernetes-core.md) | 🟡 Intermediate | K8s Architecture, Pods, Deployments, Services, the Reconciliation Loop |
-| 3 | [Networking and Storage](./networking-and-storage.md) | 🔴 Advanced | CNI, Service types, Ingress, Persistent Volumes, StatefulSets |
-| 4 | [Production Patterns](./production-patterns.md) | 🔴 Advanced | Probes, Resource limits, Autoscaling, Helm, Operators, Security |
+| 1 | [Containers Fundamentals](./containers-fundamentals.md) | 🟢 L1 · Beginner | Container vs VM, Namespaces, Cgroups, Dockerfile best practices |
+| 2 | [Kubernetes Core](./kubernetes-core.md) | 🟡 L3 · Intermediate | K8s Architecture, Pods, Deployments, Services, the Reconciliation Loop |
+| 3 | [Networking and Storage](./networking-and-storage.md) | 🔴 L4 · Advanced | CNI, Service types, Ingress, Persistent Volumes, StatefulSets |
+| 4 | [Production Patterns](./production-patterns.md) | 🔴 L4 · Advanced | Probes, Resource limits, Autoscaling, Helm, Operators, Security |

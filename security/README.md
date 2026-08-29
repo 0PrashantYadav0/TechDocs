@@ -5,12 +5,12 @@ perimeter control actually work.
 
 ## Contents
 
-| # | Topic | File |
-|---|-------|------|
-| 0 | Overview | *(this file)* |
-| 1 | TOR — The Onion Router | [tor.md](./tor.md) |
-| 2 | Forward Secrecy | [forward-secrecy.md](./forward-secrecy.md) |
-| 3 | Firewalls | [firewall.md](./firewall.md) |
+| # | Topic | File | Level |
+|---|-------|------|-------|
+| 0 | Overview | *(this file)* | L1 · Beginner |
+| 1 | TOR — The Onion Router | [tor.md](./tor.md) | L3 · Intermediate |
+| 2 | Forward Secrecy | [forward-secrecy.md](./forward-secrecy.md) | L3 · Intermediate |
+| 3 | Firewalls | [firewall.md](./firewall.md) | L2 · Novice |
 
 ---
 

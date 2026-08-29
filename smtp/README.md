@@ -5,10 +5,10 @@ the ecosystem around it.
 
 ## Contents
 
-| # | Topic | File |
-|---|-------|------|
-| 0 | Overview & the mail journey | *(this file)* |
-| 1 | SMTP protocol in depth | [smtp.md](./smtp.md) |
+| # | Topic | File | Level |
+|---|-------|------|-------|
+| 0 | Overview & the mail journey | *(this file)* | L1 · Beginner |
+| 1 | SMTP protocol in depth | [smtp.md](./smtp.md) | L2 · Novice |
 
 ---
 

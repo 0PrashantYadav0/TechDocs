@@ -9,9 +9,9 @@ Elasticsearch/OpenSearch, ranking, and the autocomplete patterns every product e
 
 | # | Chapter | Level | What you'll learn |
 |---|---------|-------|-------------------|
-| 1 | [Search Fundamentals](./search-fundamentals.md) | Basic → Intermediate | Why SQL fails, inverted indexes, tokenization, analyzers |
-| 2 | [Search Engines in Practice](./search-engines.md) | Intermediate | Elasticsearch/OpenSearch, sharding, indexing pipeline, queries |
-| 3 | [Ranking, Relevance & Autocomplete](./ranking-and-autocomplete.md) | Advanced | BM25, boosting, fuzzy match, typeahead, faceted search |
+| 1 | [Search Fundamentals](./search-fundamentals.md) | L2 · Novice | Why SQL fails, inverted indexes, tokenization, analyzers |
+| 2 | [Search Engines in Practice](./search-engines.md) | L3 · Intermediate | Elasticsearch/OpenSearch, sharding, indexing pipeline, queries |
+| 3 | [Ranking, Relevance & Autocomplete](./ranking-and-autocomplete.md) | L4 · Advanced | BM25, boosting, fuzzy match, typeahead, faceted search |
 
 ## How to read this module
 

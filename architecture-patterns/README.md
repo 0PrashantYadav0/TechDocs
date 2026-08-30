@@ -10,11 +10,11 @@ about deploys and cost. This is the "senior/staff engineer" layer: not "how do I
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Advanced |
-| 1 | Code architecture: layers, hexagonal, clean & the principles | [code-architecture.md](./code-architecture.md) | Intermediate |
-| 2 | Architecture Decision Records (ADRs) & documenting choices | [adrs-and-decisions.md](./adrs-and-decisions.md) | Advanced |
-| 3 | Security by design (authn/authz, defense in depth, secrets) | [security-by-design.md](./security-by-design.md) | Advanced |
-| 4 | Deployment, delivery & cost awareness | [deployment-and-cost.md](./deployment-and-cost.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L4 · Advanced |
+| 1 | Code architecture: layers, hexagonal, clean & the principles | [code-architecture.md](./code-architecture.md) | L3 · Intermediate |
+| 2 | Architecture Decision Records (ADRs) & documenting choices | [adrs-and-decisions.md](./adrs-and-decisions.md) | L4 · Advanced |
+| 3 | Security by design (authn/authz, defense in depth, secrets) | [security-by-design.md](./security-by-design.md) | L4 · Advanced |
+| 4 | Deployment, delivery & cost awareness | [deployment-and-cost.md](./deployment-and-cost.md) | L4 · Advanced |
 
 ---
 

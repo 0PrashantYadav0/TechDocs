@@ -12,9 +12,9 @@ Welcome to the data engineering module. Here we'll start with the fundamentals o
 
 | # | Chapter | Level | What you'll learn |
 |---|---------|-------|-------------------|
-| 1 | [Data Pipelines](./data-pipelines.md) | Basic → Intermediate | Moving data safely: ETL vs ELT, idempotency, orchestration (Airflow/Dagster), and handling inevitable failures. |
-| 2 | [Warehouses & Lakes](./warehouses-and-lakes.md) | Intermediate → Advanced | Storing data at scale: Lakes, warehouses, lakehouses, columnar formats, schemas, and modern table formats (Iceberg/Delta). |
-| 3 | [Streaming at Scale](./streaming-at-scale.md) | Advanced | Real-time processing: CDC, exactly-once semantics, Kafka, Flink, and the complexities of stateful stream processing. |
+| 1 | [Data Pipelines](./data-pipelines.md) | L2 · Novice | Moving data safely: ETL vs ELT, idempotency, orchestration (Airflow/Dagster), and handling inevitable failures. |
+| 2 | [Warehouses & Lakes](./warehouses-and-lakes.md) | L4 · Advanced | Storing data at scale: Lakes, warehouses, lakehouses, columnar formats, schemas, and modern table formats (Iceberg/Delta). |
+| 3 | [Streaming at Scale](./streaming-at-scale.md) | L4 · Advanced | Real-time processing: CDC, exactly-once semantics, Kafka, Flink, and the complexities of stateful stream processing. |
 
 ## Takeaways
 

@@ -10,11 +10,11 @@ folks wish someone had told them at year two.
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Senior+ |
-| 1 | The engineering career ladder (junior → staff → EM) | [career-ladder.md](./career-ladder.md) | Senior+ |
-| 2 | Technical leadership without authority | [technical-leadership.md](./technical-leadership.md) | Senior+ |
-| 3 | The engineering manager transition | [engineering-manager.md](./engineering-manager.md) | EM |
-| 4 | Wisdom, pragmatism & the mistakes to avoid | [wisdom-and-pitfalls.md](./wisdom-and-pitfalls.md) | All |
+| 0 | The map (this file) | *(here)* | L5 · Expert |
+| 1 | The engineering career ladder (junior → staff → EM) | [career-ladder.md](./career-ladder.md) | L5 · Expert |
+| 2 | Technical leadership without authority | [technical-leadership.md](./technical-leadership.md) | L5 · Expert |
+| 3 | The engineering manager transition | [engineering-manager.md](./engineering-manager.md) | L5 · Expert |
+| 4 | Wisdom, pragmatism & the mistakes to avoid | [wisdom-and-pitfalls.md](./wisdom-and-pitfalls.md) | L5 · Expert |
 
 ---
 

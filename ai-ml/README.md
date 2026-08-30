@@ -12,13 +12,13 @@ correctly, enough practice to build and ship.
 
 | # | Topic | File | Level |
 |---|-------|------|-------|
-| 0 | The map (this file) | *(here)* | Basic |
-| 1 | What is AI? (AI vs ML vs DL vs GenAI) | [what-is-ai.md](./what-is-ai.md) | Basic |
-| 2 | Machine Learning fundamentals | [machine-learning.md](./machine-learning.md) | Basic → Intermediate |
-| 3 | Deep Learning & neural networks | [deep-learning.md](./deep-learning.md) | Intermediate |
-| 4 | Transformers & Large Language Models | [transformers-and-llms.md](./transformers-and-llms.md) | Advanced |
-| 5 | Generative AI in practice (prompting, RAG, agents) | [generative-ai-in-practice.md](./generative-ai-in-practice.md) | Advanced |
-| 6 | MLOps: shipping AI to production | [mlops.md](./mlops.md) | Advanced |
+| 0 | The map (this file) | *(here)* | L1 · Beginner |
+| 1 | What is AI? (AI vs ML vs DL vs GenAI) | [what-is-ai.md](./what-is-ai.md) | L1 · Beginner |
+| 2 | Machine Learning fundamentals | [machine-learning.md](./machine-learning.md) | L2 · Novice |
+| 3 | Deep Learning & neural networks | [deep-learning.md](./deep-learning.md) | L3 · Intermediate |
+| 4 | Transformers & Large Language Models | [transformers-and-llms.md](./transformers-and-llms.md) | L4 · Advanced |
+| 5 | Generative AI in practice (prompting, RAG, agents) | [generative-ai-in-practice.md](./generative-ai-in-practice.md) | L4 · Advanced |
+| 6 | MLOps: shipping AI to production | [mlops.md](./mlops.md) | L4 · Advanced |
 
 ---
 

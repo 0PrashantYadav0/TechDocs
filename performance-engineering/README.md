@@ -8,9 +8,9 @@ This module is the practical toolkit for making software fast — and keeping it
 
 | # | Chapter | Level | What you'll learn |
 |---|---------|-------|-------------------|
-| 1 | [Latency, Throughput & Budgets](./latency-and-budgets.md) | Basic → Intermediate | Percentiles, SLOs vs averages, latency budgets, Amdahl's law |
-| 2 | [Profiling & Bottleneck Hunting](./profiling-and-bottlenecks.md) | Intermediate | CPU/memory/IO profiles, flame graphs, common backend killers |
-| 3 | [Load Testing & Capacity](./load-testing-and-capacity.md) | Intermediate → Advanced | Load vs stress vs soak, capacity models, scaling decisions |
+| 1 | [Latency, Throughput & Budgets](./latency-and-budgets.md) | L2 · Novice | Percentiles, SLOs vs averages, latency budgets, Amdahl's law |
+| 2 | [Profiling & Bottleneck Hunting](./profiling-and-bottlenecks.md) | L3 · Intermediate | CPU/memory/IO profiles, flame graphs, common backend killers |
+| 3 | [Load Testing & Capacity](./load-testing-and-capacity.md) | L4 · Advanced | Load vs stress vs soak, capacity models, scaling decisions |
 
 ## How to read this module
 

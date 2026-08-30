@@ -61,7 +61,65 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
 - [ ] **Distributed tracing, hands-on** — OpenTelemetry instrumentation, not just the
   concept mentioned in `observability-and-reliability/three-pillars.md`.
 
+## L4 · Advanced
+
+- [ ] **Domain-Driven Design** — bounded contexts, aggregates, ubiquitous language —
+  a natural pairing with `architecture-patterns/code-architecture.md`.
+- [ ] **Event sourcing & CQRS** — the pattern `microservices/distributed-data-patterns.md`
+  gestures at without naming.
+- [ ] **Chaos engineering & fault injection** — GameDays, failure injection in
+  production — extends `observability-and-reliability/incidents-and-postmortems.md`.
+- [ ] **Service mesh, deep-dive** — Istio/Linkerd traffic policy and mTLS beyond the
+  one paragraph in `containers-and-orchestration/production-patterns.md`.
+- [ ] **CRDTs & conflict-free replication** — belongs next to
+  `distributed-systems/consensus.md`.
+- [ ] **Vector databases & embeddings for retrieval** — the missing infrastructure
+  chapter behind `ai-ml/generative-ai-in-practice.md`'s RAG discussion.
+- [ ] **LLM evaluation, guardrails & red-teaming** — shipping GenAI safely, a gap next
+  to `ai-ml/mlops.md`.
+- [ ] **Multi-tenant architecture** — data isolation models (siloed/pooled/bridge),
+  noisy-neighbor mitigation.
+- [ ] **Zero-downtime schema migrations at scale** — expand/contract, dual writes —
+  `databases/data-modeling.md` doesn't cover how to change a model live.
+- [ ] **Global traffic management** — anycast, GSLB, multi-CDN failover — a step past
+  `networking/cdns-and-edge.md`.
+- [ ] **Capacity planning & FinOps** — cost-aware architecture at scale, a companion
+  to `architecture-patterns/deployment-and-cost.md`.
+
+## L5 · Expert
+
+- [ ] **Platform engineering & developer experience** — internal platforms, golden
+  paths, measuring DX — the discipline `engineering-leadership` doesn't touch yet.
+- [ ] **Technical writing & RFC culture** — writing design docs that get consensus,
+  not just code.
+- [ ] **Hiring & interviewing engineers** — from a senior/staff-level interviewer's
+  seat, not the candidate's.
+- [ ] **Cross-team & cross-org technical influence** — driving change without
+  authority *and* without a direct reporting line — a step beyond
+  `engineering-leadership/technical-leadership.md`.
+- [ ] **Build vs. buy decision frameworks** — how staff+ engineers actually decide.
+- [ ] **Technical debt strategy** — naming it, prioritizing it, selling a quarter of
+  work against it.
+- [ ] **Org design for engineering** — Conway's Law in practice, team topologies.
+
 ---
 
-*More gaps (L4, L5, and whole missing modules) still being audited — see history for
-updates.*
+## Whole modules missing
+
+The audit above is per-chapter; these are gaps at the *module* level — entire
+subject areas the repo doesn't touch at all yet:
+
+- [ ] **Frontend/client architecture** — the entire repo is backend/infra/platform.
+  There's nothing on component architecture, state management, rendering strategies
+  (CSR/SSR/SSG/islands), or frontend performance.
+- [ ] **Mobile engineering** — native/cross-platform trade-offs, offline-first sync,
+  mobile release management.
+- [ ] **Data structures & algorithms** — see L1 above; big enough to be its own module
+  rather than a single chapter.
+- [ ] **Developer experience / platform engineering** — see L5 above; ties several of
+  the advanced/expert gaps together (IaC, feature flags, golden paths) into one module.
+
+---
+
+*Found something else missing? Add it here in the right level, or open the gap as a
+new module section if it doesn't fit an existing one.*

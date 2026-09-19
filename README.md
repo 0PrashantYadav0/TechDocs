@@ -59,7 +59,8 @@ flowchart TB
     subgraph L4["L4 - ADVANCED - scale & operate"]
     I["databases (replication/sharding)<br/>+ distributed-systems (consensus)"] --> J["distributed-job-schedular<br/>(leader election → Postgres scheduler)"]
     J --> K["architecture-patterns + microservices<br/>+ observability (deep)"]
-    K --> AI["ai-ml (transformers, GenAI, MLOps)"]
+    K --> DDD["domain-driven-design<br/>(bounded contexts, aggregates, CQRS)"]
+    DDD --> AI["ai-ml (transformers, GenAI, MLOps)"]
     AI --> CON2["containers-and-orchestration<br/>(networking, production patterns)"]
     CON2 --> CICD2["cicd-and-devops (GitOps/IaC)<br/>+ auth (authorization patterns)"]
     CICD2 --> CLOUD2["cloud-and-serverless (architecture)<br/>+ data-engineering (warehouses, streaming)"]
@@ -135,16 +136,18 @@ Start here regardless of experience — these are the mental models everything e
    service boundaries, sagas & the outbox pattern, SLOs & incidents.
 5. **[architecture-patterns/](./architecture-patterns/README.md)** — ADRs, security by design,
    deployment & cost.
-6. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
-7. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
+6. **[domain-driven-design/](./domain-driven-design/README.md)** — bounded contexts,
+   aggregates, anti-corruption layers, domain events & CQRS.
+7. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
+8. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
    networking, storage, and production patterns (probes, HPA, Helm, service mesh).
-8. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
+9. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
    GitOps/IaC, authorization patterns (RBAC, ABAC, ReBAC, zero trust).
-9. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
-   multi-region, disaster recovery, warehouses & streaming at scale.
-10. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
+10. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
+    multi-region, disaster recovery, warehouses & streaming at scale.
+11. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
     ch 3 — ranking & autocomplete, load testing and capacity planning.
-11. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
+12. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
     (algorithms) — CDNs & edge computing, AES/RSA/ECC/DH in practice.
 
 ### Stage 5 — L5 Expert (judgment & people)
@@ -171,6 +174,7 @@ Start here regardless of experience — these are the mental models everything e
 | [microservices/](./microservices/README.md) | L3 – L4 | Monolith vs microservices, boundaries & communication, sagas & outbox |
 | [observability-and-reliability/](./observability-and-reliability/README.md) | L3 – L4 | Metrics/logs/traces, SLIs/SLOs/error budgets, incidents & postmortems |
 | [architecture-patterns/](./architecture-patterns/README.md) | L3 – L4 | Clean/hexagonal architecture, ADRs, security by design, deployment & cost |
+| [domain-driven-design/](./domain-driven-design/README.md) | L3 – L4 | Ubiquitous language, bounded contexts, aggregates, anti-corruption layers, domain events, CQRS |
 | [ai-ml/](./ai-ml/README.md) | L1 – L4 | AI vs ML vs DL vs GenAI, machine learning, deep learning, transformers & LLMs, RAG/agents, MLOps |
 | [containers-and-orchestration/](./containers-and-orchestration/README.md) | L1 – L4 | Docker, Kubernetes core, K8s networking & storage, production patterns, service mesh |
 | [cicd-and-devops/](./cicd-and-devops/README.md) | L1 – L4 | CI/CD pipelines, deployment strategies (blue/green, canary), GitOps & Infrastructure as Code |
@@ -217,6 +221,7 @@ TechDocs/
 ├── microservices/                   <- monolith vs micro, boundaries, sagas
 ├── observability-and-reliability/   <- metrics/logs/traces, SLOs, incidents
 ├── architecture-patterns/           <- clean architecture, ADRs, security, deployment, cost
+├── domain-driven-design/            <- bounded contexts, aggregates, ACLs, domain events, CQRS
 ├── ai-ml/                           <- AI/ML/DL/GenAI, transformers, RAG, MLOps
 ├── containers-and-orchestration/    <- Docker, Kubernetes, service mesh, production patterns
 ├── cicd-and-devops/                 <- CI/CD pipelines, deployment strategies, GitOps, IaC
@@ -248,7 +253,7 @@ TechDocs/
 - **"I have a system design interview"** → fundamentals (all), plus the design framework and
   trade-offs chapters, then skim databases, distributed-systems, and microservices.
 - **"I'm becoming a senior / tech lead"** → distributed-systems, microservices,
-  observability-and-reliability, and architecture-patterns — then
+  observability-and-reliability, architecture-patterns, and domain-driven-design — then
   [engineering-leadership](./engineering-leadership/README.md).
 - **"I'm moving into management"** → jump to
   [engineering-leadership](./engineering-leadership/README.md), especially the EM-transition and

@@ -63,8 +63,9 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
 
 ## L4 · Advanced
 
-- [ ] **Domain-Driven Design** — bounded contexts, aggregates, ubiquitous language —
-  a natural pairing with `architecture-patterns/code-architecture.md`.
+- [x] **Domain-Driven Design** — bounded contexts, aggregates, ubiquitous language —
+  a natural pairing with `architecture-patterns/code-architecture.md`. → now
+  [domain-driven-design/](./domain-driven-design/README.md).
 - [ ] **Event sourcing & CQRS** — the pattern `microservices/distributed-data-patterns.md`
   gestures at without naming.
 - [ ] **Chaos engineering & fault injection** — GameDays, failure injection in

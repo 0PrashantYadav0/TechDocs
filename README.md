@@ -60,7 +60,8 @@ flowchart TB
     I["databases (replication/sharding)<br/>+ distributed-systems (consensus)"] --> J["distributed-job-schedular<br/>(leader election → Postgres scheduler)"]
     J --> K["architecture-patterns + microservices<br/>+ observability (deep)"]
     K --> DDD["domain-driven-design<br/>(bounded contexts, aggregates, CQRS)"]
-    DDD --> AI["ai-ml (transformers, GenAI, MLOps)"]
+    DDD --> ES["event-sourcing-and-cqrs<br/>(event stores, projections, upcasting)"]
+    ES --> AI["ai-ml (transformers, GenAI, MLOps)"]
     AI --> CON2["containers-and-orchestration<br/>(networking, production patterns)"]
     CON2 --> CICD2["cicd-and-devops (GitOps/IaC)<br/>+ auth (authorization patterns)"]
     CICD2 --> CLOUD2["cloud-and-serverless (architecture)<br/>+ data-engineering (warehouses, streaming)"]
@@ -138,16 +139,18 @@ Start here regardless of experience — these are the mental models everything e
    deployment & cost.
 6. **[domain-driven-design/](./domain-driven-design/README.md)** — bounded contexts,
    aggregates, anti-corruption layers, domain events & CQRS.
-7. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
-8. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
+7. **[event-sourcing-and-cqrs/](./event-sourcing-and-cqrs/README.md)** — event stores,
+   projections & read models, schema evolution, and when not to event-source.
+8. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
+9. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
    networking, storage, and production patterns (probes, HPA, Helm, service mesh).
-9. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
-   GitOps/IaC, authorization patterns (RBAC, ABAC, ReBAC, zero trust).
-10. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
+10. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
+    GitOps/IaC, authorization patterns (RBAC, ABAC, ReBAC, zero trust).
+11. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
     multi-region, disaster recovery, warehouses & streaming at scale.
-11. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
+12. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
     ch 3 — ranking & autocomplete, load testing and capacity planning.
-12. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
+13. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
     (algorithms) — CDNs & edge computing, AES/RSA/ECC/DH in practice.
 
 ### Stage 5 — L5 Expert (judgment & people)
@@ -175,6 +178,7 @@ Start here regardless of experience — these are the mental models everything e
 | [observability-and-reliability/](./observability-and-reliability/README.md) | L3 – L4 | Metrics/logs/traces, SLIs/SLOs/error budgets, incidents & postmortems |
 | [architecture-patterns/](./architecture-patterns/README.md) | L3 – L4 | Clean/hexagonal architecture, ADRs, security by design, deployment & cost |
 | [domain-driven-design/](./domain-driven-design/README.md) | L3 – L4 | Ubiquitous language, bounded contexts, aggregates, anti-corruption layers, domain events, CQRS |
+| [event-sourcing-and-cqrs/](./event-sourcing-and-cqrs/README.md) | L3 – L4 | Event stores, rehydration & snapshots, projections & read models, upcasting, crypto-shredding |
 | [ai-ml/](./ai-ml/README.md) | L1 – L4 | AI vs ML vs DL vs GenAI, machine learning, deep learning, transformers & LLMs, RAG/agents, MLOps |
 | [containers-and-orchestration/](./containers-and-orchestration/README.md) | L1 – L4 | Docker, Kubernetes core, K8s networking & storage, production patterns, service mesh |
 | [cicd-and-devops/](./cicd-and-devops/README.md) | L1 – L4 | CI/CD pipelines, deployment strategies (blue/green, canary), GitOps & Infrastructure as Code |
@@ -222,6 +226,7 @@ TechDocs/
 ├── observability-and-reliability/   <- metrics/logs/traces, SLOs, incidents
 ├── architecture-patterns/           <- clean architecture, ADRs, security, deployment, cost
 ├── domain-driven-design/            <- bounded contexts, aggregates, ACLs, domain events, CQRS
+├── event-sourcing-and-cqrs/         <- event stores, projections, schema evolution, upcasting
 ├── ai-ml/                           <- AI/ML/DL/GenAI, transformers, RAG, MLOps
 ├── containers-and-orchestration/    <- Docker, Kubernetes, service mesh, production patterns
 ├── cicd-and-devops/                 <- CI/CD pipelines, deployment strategies, GitOps, IaC

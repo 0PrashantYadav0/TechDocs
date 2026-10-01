@@ -66,8 +66,9 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
 - [x] **Domain-Driven Design** — bounded contexts, aggregates, ubiquitous language —
   a natural pairing with `architecture-patterns/code-architecture.md`. → now
   [domain-driven-design/](./domain-driven-design/README.md).
-- [ ] **Event sourcing & CQRS** — the pattern `microservices/distributed-data-patterns.md`
-  gestures at without naming.
+- [x] **Event sourcing & CQRS** — the pattern `microservices/distributed-data-patterns.md`
+  gestures at without naming. → now
+  [event-sourcing-and-cqrs/](./event-sourcing-and-cqrs/README.md).
 - [ ] **Chaos engineering & fault injection** — GameDays, failure injection in
   production — extends `observability-and-reliability/incidents-and-postmortems.md`.
 - [ ] **Service mesh, deep-dive** — Istio/Linkerd traffic policy and mTLS beyond the

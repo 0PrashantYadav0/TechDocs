@@ -69,8 +69,9 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
 - [x] **Event sourcing & CQRS** — the pattern `microservices/distributed-data-patterns.md`
   gestures at without naming. → now
   [event-sourcing-and-cqrs/](./event-sourcing-and-cqrs/README.md).
-- [ ] **Chaos engineering & fault injection** — GameDays, failure injection in
-  production — extends `observability-and-reliability/incidents-and-postmortems.md`.
+- [x] **Chaos engineering & fault injection** — GameDays, failure injection in
+  production — extends `observability-and-reliability/incidents-and-postmortems.md`. → now
+  [chaos-engineering/](./chaos-engineering/README.md).
 - [ ] **Service mesh, deep-dive** — Istio/Linkerd traffic policy and mTLS beyond the
   one paragraph in `containers-and-orchestration/production-patterns.md`.
 - [ ] **CRDTs & conflict-free replication** — belongs next to

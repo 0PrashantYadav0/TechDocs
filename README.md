@@ -61,7 +61,8 @@ flowchart TB
     J --> K["architecture-patterns + microservices<br/>+ observability (deep)"]
     K --> DDD["domain-driven-design<br/>(bounded contexts, aggregates, CQRS)"]
     DDD --> ES["event-sourcing-and-cqrs<br/>(event stores, projections, upcasting)"]
-    ES --> AI["ai-ml (transformers, GenAI, MLOps)"]
+    ES --> CHAOS["chaos-engineering<br/>(fault injection, GameDays)"]
+    CHAOS --> AI["ai-ml (transformers, GenAI, MLOps)"]
     AI --> CON2["containers-and-orchestration<br/>(networking, production patterns)"]
     CON2 --> CICD2["cicd-and-devops (GitOps/IaC)<br/>+ auth (authorization patterns)"]
     CICD2 --> CLOUD2["cloud-and-serverless (architecture)<br/>+ data-engineering (warehouses, streaming)"]
@@ -141,16 +142,18 @@ Start here regardless of experience — these are the mental models everything e
    aggregates, anti-corruption layers, domain events & CQRS.
 7. **[event-sourcing-and-cqrs/](./event-sourcing-and-cqrs/README.md)** — event stores,
    projections & read models, schema evolution, and when not to event-source.
-8. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
-9. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
-   networking, storage, and production patterns (probes, HPA, Helm, service mesh).
-10. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
+8. **[chaos-engineering/](./chaos-engineering/README.md)** — steady-state hypotheses,
+   fault injection, GameDays, and guardrails for experiments in production.
+9. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
+10. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
+    networking, storage, and production patterns (probes, HPA, Helm, service mesh).
+11. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
     GitOps/IaC, authorization patterns (RBAC, ABAC, ReBAC, zero trust).
-11. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
+12. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
     multi-region, disaster recovery, warehouses & streaming at scale.
-12. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
+13. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
     ch 3 — ranking & autocomplete, load testing and capacity planning.
-13. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
+14. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
     (algorithms) — CDNs & edge computing, AES/RSA/ECC/DH in practice.
 
 ### Stage 5 — L5 Expert (judgment & people)
@@ -176,6 +179,7 @@ Start here regardless of experience — these are the mental models everything e
 | [messaging-and-streaming/](./messaging-and-streaming/README.md) | L1 – L4 | Sync vs async, queues vs streams (Kafka/RabbitMQ), delivery guarantees, DLQs |
 | [microservices/](./microservices/README.md) | L3 – L4 | Monolith vs microservices, boundaries & communication, sagas & outbox |
 | [observability-and-reliability/](./observability-and-reliability/README.md) | L3 – L4 | Metrics/logs/traces, SLIs/SLOs/error budgets, incidents & postmortems |
+| [chaos-engineering/](./chaos-engineering/README.md) | L3 – L4 | Steady-state hypotheses, blast radius, fault injection (tc, Toxiproxy, Istio, Chaos Mesh, FIS), GameDays |
 | [architecture-patterns/](./architecture-patterns/README.md) | L3 – L4 | Clean/hexagonal architecture, ADRs, security by design, deployment & cost |
 | [domain-driven-design/](./domain-driven-design/README.md) | L3 – L4 | Ubiquitous language, bounded contexts, aggregates, anti-corruption layers, domain events, CQRS |
 | [event-sourcing-and-cqrs/](./event-sourcing-and-cqrs/README.md) | L3 – L4 | Event stores, rehydration & snapshots, projections & read models, upcasting, crypto-shredding |
@@ -224,6 +228,7 @@ TechDocs/
 ├── messaging-and-streaming/         <- async, queues vs streams, delivery guarantees
 ├── microservices/                   <- monolith vs micro, boundaries, sagas
 ├── observability-and-reliability/   <- metrics/logs/traces, SLOs, incidents
+├── chaos-engineering/               <- fault injection, GameDays, chaos in production
 ├── architecture-patterns/           <- clean architecture, ADRs, security, deployment, cost
 ├── domain-driven-design/            <- bounded contexts, aggregates, ACLs, domain events, CQRS
 ├── event-sourcing-and-cqrs/         <- event stores, projections, schema evolution, upcasting

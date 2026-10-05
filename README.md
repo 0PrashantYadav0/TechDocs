@@ -57,7 +57,8 @@ flowchart TB
     NET2 --> AIML2["ai-ml (deep learning) + search-systems<br/>+ performance-engineering (ch 2)"]
     end
     subgraph L4["L4 - ADVANCED - scale & operate"]
-    I["databases (replication/sharding)<br/>+ distributed-systems (consensus)"] --> J["distributed-job-schedular<br/>(leader election → Postgres scheduler)"]
+    I["databases (replication/sharding)<br/>+ distributed-systems (consensus)"] --> ZDM["zero-downtime-migrations<br/>(expand/contract, safe DDL, backfills)"]
+    ZDM --> J["distributed-job-schedular<br/>(leader election → Postgres scheduler)"]
     J --> K["architecture-patterns + microservices<br/>+ observability (deep)"]
     K --> DDD["domain-driven-design<br/>(bounded contexts, aggregates, CQRS)"]
     DDD --> ES["event-sourcing-and-cqrs<br/>(event stores, projections, upcasting)"]
@@ -130,30 +131,32 @@ Start here regardless of experience — these are the mental models everything e
 
 ### Stage 4 — L4 Advanced (you scale and operate systems)
 1. **[databases/](./databases/README.md)** ch 4-5 — replication, sharding, data modeling.
-2. **[distributed-systems/](./distributed-systems/README.md)** — consensus (Raft, quorums),
+2. **[zero-downtime-migrations/](./zero-downtime-migrations/README.md)** — expand &
+   contract, lock-safe DDL, batched backfills & dual writes, migration linting.
+3. **[distributed-systems/](./distributed-systems/README.md)** — consensus (Raft, quorums),
    time & idempotency.
-3. **[distributed-job-schedular/](./distributed-job-schedular/README.md)** ch 2-6 — leader
+4. **[distributed-job-schedular/](./distributed-job-schedular/README.md)** ch 2-6 — leader
    election, heartbeats, deduplication, priority queues, and a Postgres-backed scheduler.
-4. **[microservices/](./microservices/README.md)** and **[observability-and-reliability/](./observability-and-reliability/README.md)** —
+5. **[microservices/](./microservices/README.md)** and **[observability-and-reliability/](./observability-and-reliability/README.md)** —
    service boundaries, sagas & the outbox pattern, SLOs & incidents.
-5. **[architecture-patterns/](./architecture-patterns/README.md)** — ADRs, security by design,
+6. **[architecture-patterns/](./architecture-patterns/README.md)** — ADRs, security by design,
    deployment & cost.
-6. **[domain-driven-design/](./domain-driven-design/README.md)** — bounded contexts,
+7. **[domain-driven-design/](./domain-driven-design/README.md)** — bounded contexts,
    aggregates, anti-corruption layers, domain events & CQRS.
-7. **[event-sourcing-and-cqrs/](./event-sourcing-and-cqrs/README.md)** — event stores,
+8. **[event-sourcing-and-cqrs/](./event-sourcing-and-cqrs/README.md)** — event stores,
    projections & read models, schema evolution, and when not to event-source.
-8. **[chaos-engineering/](./chaos-engineering/README.md)** — steady-state hypotheses,
+9. **[chaos-engineering/](./chaos-engineering/README.md)** — steady-state hypotheses,
    fault injection, GameDays, and guardrails for experiments in production.
-9. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
-10. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
+10. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
+11. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
     networking, storage, and production patterns (probes, HPA, Helm, service mesh).
-11. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
+12. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
     GitOps/IaC, authorization patterns (RBAC, ABAC, ReBAC, zero trust).
-12. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
+13. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
     multi-region, disaster recovery, warehouses & streaming at scale.
-13. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
+14. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
     ch 3 — ranking & autocomplete, load testing and capacity planning.
-14. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
+15. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
     (algorithms) — CDNs & edge computing, AES/RSA/ECC/DH in practice.
 
 ### Stage 5 — L5 Expert (judgment & people)
@@ -171,6 +174,7 @@ Start here regardless of experience — these are the mental models everything e
 |--------|-------|----------------|
 | [system-design-fundamentals/](./system-design-fundamentals/README.md) | L1 – L4 | Scalability, latency, availability, CAP/PACELC, estimation, scaling, the design framework, trade-offs |
 | [databases/](./databases/README.md) | L1 – L4 | SQL vs NoSQL, indexing, transactions/ACID, replication & sharding, data modeling |
+| [zero-downtime-migrations/](./zero-downtime-migrations/README.md) | L3 – L4 | Expand & contract, lock-safe DDL (PostgreSQL & MySQL), backfills & dual writes, migration linting |
 | [api-design/](./api-design/README.md) | L1 – L4 | REST/gRPC/GraphQL, good REST design, versioning, pagination & evolution |
 | [testing-and-quality/](./testing-and-quality/README.md) | L1 – L4 | The testing pyramid, kinds of tests, TDD, coverage, quality gates & reviews |
 | [concurrency/](./concurrency/README.md) | L3 – L4 | Concurrency vs parallelism, threads/async/processes, race conditions, locks, safe patterns |
@@ -220,6 +224,7 @@ TechDocs/
 │   # Core curriculum (L1 beginner -> L5 expert)
 ├── system-design-fundamentals/      <- START HERE: the mental models
 ├── databases/                       <- SQL/NoSQL, indexing, transactions, sharding, modeling
+├── zero-downtime-migrations/        <- expand/contract, safe DDL, backfills, migration linting
 ├── api-design/                      <- REST/gRPC/GraphQL, good design, versioning
 ├── testing-and-quality/             <- testing pyramid, TDD, coverage, quality gates
 ├── concurrency/                     <- threads/async/processes, races, locks, safe patterns

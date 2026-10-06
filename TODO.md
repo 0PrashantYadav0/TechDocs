@@ -80,8 +80,9 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
   chapter behind `ai-ml/generative-ai-in-practice.md`'s RAG discussion.
 - [ ] **LLM evaluation, guardrails & red-teaming** — shipping GenAI safely, a gap next
   to `ai-ml/mlops.md`.
-- [ ] **Multi-tenant architecture** — data isolation models (siloed/pooled/bridge),
-  noisy-neighbor mitigation.
+- [x] **Multi-tenant architecture** — data isolation models (siloed/pooled/bridge),
+  noisy-neighbor mitigation. → now
+  [multi-tenant-architecture/](./multi-tenant-architecture/README.md).
 - [x] **Zero-downtime schema migrations at scale** — expand/contract, dual writes —
   `databases/data-modeling.md` doesn't cover how to change a model live. → now
   [zero-downtime-migrations/](./zero-downtime-migrations/README.md).

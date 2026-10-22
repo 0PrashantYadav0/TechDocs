@@ -74,8 +74,8 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
   [chaos-engineering/](./chaos-engineering/README.md).
 - [ ] **Service mesh, deep-dive** — Istio/Linkerd traffic policy and mTLS beyond the
   one paragraph in `containers-and-orchestration/production-patterns.md`.
-- [ ] **CRDTs & conflict-free replication** — belongs next to
-  `distributed-systems/consensus.md`.
+- [x] **CRDTs & conflict-free replication** — belongs next to
+  `distributed-systems/consensus.md`. → now [crdts/](./crdts/README.md).
 - [ ] **Vector databases & embeddings for retrieval** — the missing infrastructure
   chapter behind `ai-ml/generative-ai-in-practice.md`'s RAG discussion.
 - [ ] **LLM evaluation, guardrails & red-teaming** — shipping GenAI safely, a gap next

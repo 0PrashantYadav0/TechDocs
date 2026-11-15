@@ -76,8 +76,9 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
   one paragraph in `containers-and-orchestration/production-patterns.md`.
 - [x] **CRDTs & conflict-free replication** — belongs next to
   `distributed-systems/consensus.md`. → now [crdts/](./crdts/README.md).
-- [ ] **Vector databases & embeddings for retrieval** — the missing infrastructure
-  chapter behind `ai-ml/generative-ai-in-practice.md`'s RAG discussion.
+- [x] **Vector databases & embeddings for retrieval** — the missing infrastructure
+  chapter behind `ai-ml/generative-ai-in-practice.md`'s RAG discussion. → now
+  [vector-databases/](./vector-databases/README.md).
 - [ ] **LLM evaluation, guardrails & red-teaming** — shipping GenAI safely, a gap next
   to `ai-ml/mlops.md`.
 - [x] **Multi-tenant architecture** — data isolation models (siloed/pooled/bridge),

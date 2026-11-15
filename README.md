@@ -66,7 +66,8 @@ flowchart TB
     MT --> CRDT["crdts<br/>(OR-Set, sequence CRDTs, sync)"]
     CRDT --> CHAOS["chaos-engineering<br/>(fault injection, GameDays)"]
     CHAOS --> AI["ai-ml (transformers, GenAI, MLOps)"]
-    AI --> CON2["containers-and-orchestration<br/>(networking, production patterns)"]
+    AI --> VDB["vector-databases<br/>(HNSW, hybrid search, reranking)"]
+    VDB --> CON2["containers-and-orchestration<br/>(networking, production patterns)"]
     CON2 --> CICD2["cicd-and-devops (GitOps/IaC)<br/>+ auth (authorization patterns)"]
     CICD2 --> CLOUD2["cloud-and-serverless (architecture)<br/>+ data-engineering (warehouses, streaming)"]
     CLOUD2 --> SE["search-systems (ranking)<br/>+ performance-engineering (load testing)"]
@@ -154,15 +155,17 @@ Start here regardless of experience — these are the mental models everything e
 11. **[chaos-engineering/](./chaos-engineering/README.md)** — steady-state hypotheses,
     fault injection, GameDays, and guardrails for experiments in production.
 12. **[ai-ml/](./ai-ml/README.md)** ch 4-6 — transformers & LLMs, RAG/agents, and MLOps.
-13. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
+13. **[vector-databases/](./vector-databases/README.md)** — embeddings, HNSW/IVF/quantization,
+    pgvector vs dedicated engines, hybrid search & reranking, and retrieval evaluation.
+14. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
     networking, storage, and production patterns (probes, HPA, Helm, service mesh).
-14. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
+15. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
     GitOps/IaC, authorization patterns (RBAC, ABAC, ReBAC, zero trust).
-15. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
+16. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
     multi-region, disaster recovery, warehouses & streaming at scale.
-16. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
+17. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
     ch 3 — ranking & autocomplete, load testing and capacity planning.
-17. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
+18. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
     (algorithms) — CDNs & edge computing, AES/RSA/ECC/DH in practice.
 
 ### Stage 5 — L5 Expert (judgment & people)
@@ -196,6 +199,7 @@ Start here regardless of experience — these are the mental models everything e
 | [multi-tenant-architecture/](./multi-tenant-architecture/README.md) | L3 – L4 | Tenant context, silo/pool/bridge models, row-level security, per-tenant limits, shuffle sharding, cells |
 | [crdts/](./crdts/README.md) | L3 – L4 | Strong eventual consistency, state/op/delta CRDTs, OR-Set, LWW & MV registers, RGA/Yjs/Automerge, tombstone GC |
 | [ai-ml/](./ai-ml/README.md) | L1 – L4 | AI vs ML vs DL vs GenAI, machine learning, deep learning, transformers & LLMs, RAG/agents, MLOps |
+| [vector-databases/](./vector-databases/README.md) | L3 – L4 | Embeddings, similarity metrics, HNSW/IVF/PQ, pgvector & vector DBs, filtering, hybrid search, RRF, reranking, retrieval evals |
 | [containers-and-orchestration/](./containers-and-orchestration/README.md) | L1 – L4 | Docker, Kubernetes core, K8s networking & storage, production patterns, service mesh |
 | [cicd-and-devops/](./cicd-and-devops/README.md) | L1 – L4 | CI/CD pipelines, deployment strategies (blue/green, canary), GitOps & Infrastructure as Code |
 | [auth/](./auth/README.md) | L1 – L4 | Authentication, OAuth 2.0/OIDC, JWT, authorization patterns (RBAC/ABAC/ReBAC), zero trust |
@@ -248,6 +252,7 @@ TechDocs/
 ├── multi-tenant-architecture/       <- tenant isolation, row-level security, noisy neighbors, cells
 ├── crdts/                           <- conflict-free replication, OR-Set, collaborative editing
 ├── ai-ml/                           <- AI/ML/DL/GenAI, transformers, RAG, MLOps
+├── vector-databases/                <- embeddings, ANN indexes, hybrid search, reranking
 ├── containers-and-orchestration/    <- Docker, Kubernetes, service mesh, production patterns
 ├── cicd-and-devops/                 <- CI/CD pipelines, deployment strategies, GitOps, IaC
 ├── auth/                            <- authentication, OAuth2/OIDC, JWT, authorization patterns

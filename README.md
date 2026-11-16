@@ -68,7 +68,8 @@ flowchart TB
     CHAOS --> AI["ai-ml (transformers, GenAI, MLOps)"]
     AI --> VDB["vector-databases<br/>(HNSW, hybrid search, reranking)"]
     VDB --> CON2["containers-and-orchestration<br/>(networking, production patterns)"]
-    CON2 --> CICD2["cicd-and-devops (GitOps/IaC)<br/>+ auth (authorization patterns)"]
+    CON2 --> MESH["service-mesh<br/>(traffic policy, mTLS, ambient)"]
+    MESH --> CICD2["cicd-and-devops (GitOps/IaC)<br/>+ auth (authorization patterns)"]
     CICD2 --> CLOUD2["cloud-and-serverless (architecture)<br/>+ data-engineering (warehouses, streaming)"]
     CLOUD2 --> SE["search-systems (ranking)<br/>+ performance-engineering (load testing)"]
     end
@@ -159,13 +160,15 @@ Start here regardless of experience — these are the mental models everything e
     pgvector vs dedicated engines, hybrid search & reranking, and retrieval evaluation.
 14. **[containers-and-orchestration/](./containers-and-orchestration/README.md)** ch 3-4 — K8s
     networking, storage, and production patterns (probes, HPA, Helm, service mesh).
-15. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
+15. **[service-mesh/](./service-mesh/README.md)** — sidecar vs ambient data planes, traffic
+    shifting, retries & outlier detection, SPIFFE identity, strict mTLS, and mesh upgrades.
+16. **[cicd-and-devops/](./cicd-and-devops/README.md)** ch 3 and **[auth/](./auth/README.md)** ch 4 —
     GitOps/IaC, authorization patterns (RBAC, ABAC, ReBAC, zero trust).
-16. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
+17. **[cloud-and-serverless/](./cloud-and-serverless/README.md)** ch 3 and **[data-engineering/](./data-engineering/README.md)** —
     multi-region, disaster recovery, warehouses & streaming at scale.
-17. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
+18. **[search-systems/](./search-systems/README.md)** ch 3 and **[performance-engineering/](./performance-engineering/README.md)**
     ch 3 — ranking & autocomplete, load testing and capacity planning.
-18. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
+19. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
     (algorithms) — CDNs & edge computing, AES/RSA/ECC/DH in practice.
 
 ### Stage 5 — L5 Expert (judgment & people)
@@ -201,6 +204,7 @@ Start here regardless of experience — these are the mental models everything e
 | [ai-ml/](./ai-ml/README.md) | L1 – L4 | AI vs ML vs DL vs GenAI, machine learning, deep learning, transformers & LLMs, RAG/agents, MLOps |
 | [vector-databases/](./vector-databases/README.md) | L3 – L4 | Embeddings, similarity metrics, HNSW/IVF/PQ, pgvector & vector DBs, filtering, hybrid search, RRF, reranking, retrieval evals |
 | [containers-and-orchestration/](./containers-and-orchestration/README.md) | L1 – L4 | Docker, Kubernetes core, K8s networking & storage, production patterns, service mesh |
+| [service-mesh/](./service-mesh/README.md) | L3 – L4 | Sidecar & ambient data planes, xDS, traffic shifting, retries, outlier detection, SPIFFE, strict mTLS, AuthorizationPolicy |
 | [cicd-and-devops/](./cicd-and-devops/README.md) | L1 – L4 | CI/CD pipelines, deployment strategies (blue/green, canary), GitOps & Infrastructure as Code |
 | [auth/](./auth/README.md) | L1 – L4 | Authentication, OAuth 2.0/OIDC, JWT, authorization patterns (RBAC/ABAC/ReBAC), zero trust |
 | [cloud-and-serverless/](./cloud-and-serverless/README.md) | L1 – L4 | Cloud-native, 12-factor app, serverless patterns, multi-region, DR, cost optimization |
@@ -254,6 +258,7 @@ TechDocs/
 ├── ai-ml/                           <- AI/ML/DL/GenAI, transformers, RAG, MLOps
 ├── vector-databases/                <- embeddings, ANN indexes, hybrid search, reranking
 ├── containers-and-orchestration/    <- Docker, Kubernetes, service mesh, production patterns
+├── service-mesh/                    <- Istio/Linkerd, traffic management, mTLS, mesh operations
 ├── cicd-and-devops/                 <- CI/CD pipelines, deployment strategies, GitOps, IaC
 ├── auth/                            <- authentication, OAuth2/OIDC, JWT, authorization patterns
 ├── cloud-and-serverless/            <- cloud-native, serverless, multi-region, cost optimization

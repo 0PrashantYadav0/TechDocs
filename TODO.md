@@ -72,8 +72,9 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
 - [x] **Chaos engineering & fault injection** — GameDays, failure injection in
   production — extends `observability-and-reliability/incidents-and-postmortems.md`. → now
   [chaos-engineering/](./chaos-engineering/README.md).
-- [ ] **Service mesh, deep-dive** — Istio/Linkerd traffic policy and mTLS beyond the
-  one paragraph in `containers-and-orchestration/production-patterns.md`.
+- [x] **Service mesh, deep-dive** — Istio/Linkerd traffic policy and mTLS beyond the
+  one paragraph in `containers-and-orchestration/production-patterns.md`. → now
+  [service-mesh/](./service-mesh/README.md).
 - [x] **CRDTs & conflict-free replication** — belongs next to
   `distributed-systems/consensus.md`. → now [crdts/](./crdts/README.md).
 - [x] **Vector databases & embeddings for retrieval** — the missing infrastructure

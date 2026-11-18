@@ -88,8 +88,9 @@ L3 Intermediate → L4 Advanced → L5 Expert**.
 - [x] **Zero-downtime schema migrations at scale** — expand/contract, dual writes —
   `databases/data-modeling.md` doesn't cover how to change a model live. → now
   [zero-downtime-migrations/](./zero-downtime-migrations/README.md).
-- [ ] **Global traffic management** — anycast, GSLB, multi-CDN failover — a step past
-  `networking/cdns-and-edge.md`.
+- [x] **Global traffic management** — anycast, GSLB, multi-CDN failover — a step past
+  `networking/cdns-and-edge.md`. → now
+  [global-traffic-management/](./global-traffic-management/README.md).
 - [ ] **Capacity planning & FinOps** — cost-aware architecture at scale, a companion
   to `architecture-patterns/deployment-and-cost.md`.
 

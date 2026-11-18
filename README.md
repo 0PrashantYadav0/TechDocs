@@ -72,6 +72,7 @@ flowchart TB
     MESH --> CICD2["cicd-and-devops (GitOps/IaC)<br/>+ auth (authorization patterns)"]
     CICD2 --> CLOUD2["cloud-and-serverless (architecture)<br/>+ data-engineering (warehouses, streaming)"]
     CLOUD2 --> SE["search-systems (ranking)<br/>+ performance-engineering (load testing)"]
+    SE --> GTM["global-traffic-management<br/>(GSLB, anycast, multi-CDN, failover)"]
     end
     subgraph L5["L5 - EXPERT - judgment & people"]
     M["engineering-leadership"]
@@ -170,6 +171,8 @@ Start here regardless of experience — these are the mental models everything e
     ch 3 — ranking & autocomplete, load testing and capacity planning.
 19. **[networking/](./networking/README.md)** ch 3 and **[encryption/](./encryption/README.md)**
     (algorithms) — CDNs & edge computing, AES/RSA/ECC/DH in practice.
+20. **[global-traffic-management/](./global-traffic-management/README.md)** — DNS-based GSLB,
+    anycast & BGP, multi-CDN steering, and regional evacuation with capacity headroom.
 
 ### Stage 5 — L5 Expert (judgment & people)
 1. **[engineering-leadership/](./engineering-leadership/README.md)** — the career ladder,
@@ -218,6 +221,7 @@ Start here regardless of experience — these are the mental models everything e
 | Module | Level | What it covers |
 |--------|-------|----------------|
 | [networking/](./networking/README.md) | L1 – L4 | How the internet works (IP, routing, NAT), DNS deep-dive, CDNs & edge computing, BGP |
+| [global-traffic-management/](./global-traffic-management/README.md) | L3 – L4 | GeoDNS & latency routing, TTLs & ECS, anycast & BGP catchments, multi-CDN steering, region evacuation |
 | [encryption/](./encryption/README.md) | L1 – L4 | Symmetric/asymmetric encryption, keys, hybrid, digital signatures, real algorithms (AES, RSA, ECC, DH) |
 | [quic/](./quic/README.md) | L1 – L3 | The networking stack: TCP vs UDP, TLS 1.2/1.3, HTTP/1-2-3, and QUIC |
 | [mqtt/](./mqtt/README.md) | L1 – L3 | MQTT pub/sub protocol (topics, QoS, sessions, LWT) and how to use it effectively |
@@ -269,6 +273,7 @@ TechDocs/
 │
 │   # Deep-dive references
 ├── networking/                      <- how the internet works, DNS, CDNs, edge computing
+├── global-traffic-management/       <- GSLB, anycast, multi-CDN, regional failover
 ├── encryption/                      <- how encryption works
 ├── quic/                            <- transport & HTTP evolution
 ├── mqtt/                            <- IoT pub/sub messaging
